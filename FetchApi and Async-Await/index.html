@@ -12,7 +12,7 @@
     <div class="container mx-auto h-[100vh]">
 
         <!-- WEATHER BOX -->
-        <div id="weatherBox" class="p-3 mx-4 h-full grid grid-cols-9 grid-rows-9">
+        <div id="weatherBox" class="p-3 mx-4 h-full grid grid-cols-9 grid-rows-9 gap-2">
 
             <!-- SECTION 1 INPUT -->
             <div id="section-1" class="flex items-center col-start-7 col-span-3 row-span-2">
@@ -28,13 +28,13 @@
             <!-- WEATHER FORECAST -->
 
             <div id="section-2"
-                class="border-2 border-green-500 col-span-6 flex flex-col items-center row-span-full text-center">
+                class="border-2 rounded-lg col-span-6 flex flex-col items-center row-span-full text-center">
                 <div id="weatherIcon">
-                    <img id="weatherImg" src="openweathermap/01d.svg" class="mt-8 pt-4 h-[14rem]" alt="">
+                    <img id="weatherImg" src="" class="mt-8 pt-4 h-[14rem]" alt="">
                 </div>
-                <div id="city" class="text-5xl mt-4 pt-2 font-bold"></div>
+                <div id="city" class="text-6xl mt-4 pt-2 font-bold"></div>
                 <div id="tempDetails" class="w-fit mt-8 pt-2 flex items-end gap-2">
-                    <div id="temp" class="text-6xl font-semibold"><span></span>&deg;</div>
+                    <div id="temp" class="text-6xl font-semibold"></div>
                     <div id="weatherType" class="text-2xl font-bold"></div>
                 </div>
             </div>

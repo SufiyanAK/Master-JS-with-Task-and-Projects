@@ -31,17 +31,17 @@ In addition to projects, I solve various coding challenges. You can find these i
 Feel free to browse through the code, clone the repository, and run the projects on your local machine. If you're also learning JavaScript, I hope you find my projects and solutions helpful. Here's how you can get started:
 
 1. **Clone the repo**:
-    ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    ```
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
 2. **Navigate to a project folder**:
-    ```sh
-    cd your-repo-name/project-name
-    ```
+   ```sh
+   cd your-repo-name/project-name
+   ```
 3. **Install any dependencies (if applicable)**:
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 ## Contributions
 

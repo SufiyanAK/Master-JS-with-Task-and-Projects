@@ -5,6 +5,10 @@ const image = document.querySelector('#weatherImg');
 const city = document.querySelector('#city');
 const temp = document.querySelector('#temp');
 const weatherType = document.querySelector('#weatherType');
+const windSpeed = document.querySelector('#windSpeed span');
+const feelsLike = document.querySelector('#feelsLike span');
+const humidity = document.querySelector('#humidity span');
+const airPressure = document.querySelector('#airPressure span');
 
 // VARIABLES
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";

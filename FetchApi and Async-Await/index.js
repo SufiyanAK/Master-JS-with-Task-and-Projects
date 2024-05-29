@@ -10,6 +10,14 @@ const weatherType = document.querySelector('#weatherType');
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const key = "77c49bccf20df0263f4939a2bc0ec27e";
 
+input.addEventListener('keydown', async (e) => {
+    if (e.key === 'Enter') {
+        const value = input.value
+        weather(value);
+    }
+})
+
+// WEATHER FETCH FUNCTION
 async function weather(city) {
     try {
         const response = await fetch(`${apiURL}${city}&appid=${key}`);
@@ -19,8 +27,6 @@ async function weather(city) {
         }
         
         const data = await response.json()
-        // console.log(response);
-        // console.log(data);
         changeWeather(data);
         
     } catch (error) {
@@ -28,13 +34,7 @@ async function weather(city) {
     }
 }
 
-input.addEventListener('keydown', async (e) => {
-    if (e.key === 'Enter') {
-        const value = input.value
-        weather(value);
-    }
-})
-
+// CHANGE WEATHER DISPLAY FUNCTION
 function changeWeather(data) {
     image.src = `openweathermap/${data.weather[0].icon}.svg`
     city.textContent = data.name

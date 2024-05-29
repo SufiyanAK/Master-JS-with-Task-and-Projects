@@ -40,8 +40,12 @@ async function weather(city) {
 
 // CHANGE WEATHER DISPLAY FUNCTION
 function changeWeather(data) {
-    image.src = `openweathermap/${data.weather[0].icon}.svg`
-    city.textContent = data.name
-    temp.textContent = `${Math.round(data.main.temp)}°`
-    weatherType.textContent = data.weather[0].main
+    image.src = `openweathermap/${data.weather[0].icon}.svg`;
+    city.textContent = data.name;
+    temp.textContent = `${Math.round(data.main.temp)}°`;
+    weatherType.textContent = data.weather[0].main;
+    windSpeed.textContent = `${data.wind.speed}Km/h`;
+    feelsLike.textContent = `${data.main.feels_like}°`;
+    humidity.textContent = `${data.main.humidity}`;
+    airPressure.textContent = `${data.main.pressure} atm`;
 }

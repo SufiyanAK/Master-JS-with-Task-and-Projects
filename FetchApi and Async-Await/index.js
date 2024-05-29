@@ -14,6 +14,7 @@ const airPressure = document.querySelector('#airPressure span');
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const key = "77c49bccf20df0263f4939a2bc0ec27e";
 
+// INPUT CITY EVENTLISTNER
 input.addEventListener('keydown', async (e) => {
     if (e.key === 'Enter') {
         const value = input.value
@@ -21,10 +22,16 @@ input.addEventListener('keydown', async (e) => {
     }
 })
 
+searchBtn.addEventListener('click', () => {
+    const city = input.value;
+    weather(city);
+})
+
 // WEATHER FETCH FUNCTION
 async function weather(city) {
     try {
         const response = await fetch(`${apiURL}${city}&appid=${key}`);
+        
         if (!response.ok) {
             console.log("Error fetchin data");
             return
@@ -35,6 +42,7 @@ async function weather(city) {
         
     } catch (error) {
         console.log(`error fetching weather data ${error}`);
+
     }
 }
 

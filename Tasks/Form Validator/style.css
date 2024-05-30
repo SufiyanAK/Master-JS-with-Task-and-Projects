@@ -49,6 +49,7 @@
 
 #signUpBtn {
     color: white;
+    font-weight: bold;
     border: none;
     font-size: 1.2rem;
     padding: .6rem;
@@ -67,4 +68,8 @@
 
 .error {
     border-color: rgb(221, 38, 38) !important;
+}
+
+.disabled {
+    background-color: grey !important;
 }

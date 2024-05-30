@@ -18,12 +18,14 @@ input.addEventListener('input', () => {
 
     if (final) {
         inputBox.classList.remove('error');
+        signUpBtn.classList.remove('disabled')
         inputBox.classList.add('found');
         signUpBtn.disabled = !final
-
+        
     } else {
         inputBox.classList.remove('found');
         inputBox.classList.add('error');
+        signUpBtn.classList.add('disabled')
         signUpBtn.disabled = !final
     }
 

@@ -131,8 +131,29 @@ factorial(6);
 
 // Question 10
 // Interviewer: Rana, suppose you're given two strings, such as "listen" and "silent", and you need to determine whether they are anagrams of each other (i.e., if they contain the same characters in the same quantities, but in a different order). How would you approach this problem using JavaScript?
+function anagramWords(str1, str2) {
+    let str1Length = str1.length,
+        str2Length = str2.length;
 
+    if (str1Length !== str2Length) {
+        return 'not anagram'
+    }
 
+    str1 = str1.toLowerCase().split('').sort()
+    console.log(str1);
+    str2 = str2.toLowerCase().split('').sort()
+    console.log(str2);
+
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] !== str2[i]) {
+            console.log('not anagram');
+            return;
+        }
+    }
+    console.log('Anagram');
+}
+
+anagramWords('Sileht', 'Listen')
 
 // Question 11
 // Interviewer: Rana, imagine you're given a sentence, such as "Hello world, how are you?", and you need to reverse the order of the words in the sentence so that it becomes "you? are how world, Hello". How would you approach this problem using JavaScript?

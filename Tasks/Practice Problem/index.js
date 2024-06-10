@@ -126,7 +126,7 @@ function factorial(val) {
     console.log(fact);
 }
 
-factorial(6);
+// factorial(6);
 
 
 // Question 10
@@ -153,11 +153,17 @@ function anagramWords(str1, str2) {
     console.log('Anagram');
 }
 
-anagramWords('Sileht', 'Listen')
+// anagramWords('Sileht', 'Listen')
 
 // Question 11
 // Interviewer: Rana, imagine you're given a sentence, such as "Hello world, how are you?", and you need to reverse the order of the words in the sentence so that it becomes "you? are how world, Hello". How would you approach this problem using JavaScript?
+function reverseSentence(str) {
+    let reverse = str.split(' ').reverse().join(' ');
 
+    console.log(reverse);
+}
+
+reverseSentence("Hello world, how are you?");
 
 
 // Question 12

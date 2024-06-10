@@ -114,11 +114,19 @@ function Sort(arr) {
     console.log(newArr);
 }
 
-Sort([5, 2, 9, 1, 7])
+// Sort([5, 2, 9, 1, 7])
 
 // Question 9
 // Interviewer: Rana, suppose you're given a non-negative integer, such as 5, and you need to calculate its factorial (which is the product of all positive integers less than or equal to that number). How would you approach this problem using JavaScript?
+function factorial(val) {
+    let fact = 1;
+    for (let i = 2; i <= val; i++) {
+        fact *= i; // fact = fact * i
+    }
+    console.log(fact);
+}
 
+factorial(6);
 
 
 // Question 10

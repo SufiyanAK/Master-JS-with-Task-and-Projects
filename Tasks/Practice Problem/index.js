@@ -84,12 +84,27 @@ function findLargestSmallest(arr) {
     console.log(`biggest number is ${biggest} and smallest number is ${smallest}`);
 }
 
-findLargestSmallest([5, 10, 2, 8, 3])
+// findLargestSmallest([5, 10, 2, 8, 3])
 
 
 // Question 7
 // Interviewer: Rana, imagine you have an array of elements, such as ['apple', 'banana', 'orange', 'apple', 'banana', 'apple'], and you need to write JavaScript code to count the occurrences of each element in the array. How would you approach this problem?
+function countOccurrence(arr) {
+    const count = {};
 
+    arr.forEach(item => {
+        const fruit = item.toLowerCase();
+        if (count[fruit]) {
+            count[fruit] += 1;
+        } else {
+            count[fruit] = 1;
+        }
+    });
+
+    console.log(count);
+}
+
+countOccurrence(['Apple', 'banana', 'Orange', 'apple', 'banana', 'apple'])
 
 
 // Question 8

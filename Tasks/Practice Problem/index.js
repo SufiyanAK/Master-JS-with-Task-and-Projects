@@ -26,7 +26,16 @@ findEvenOdd(3)
 
 // Question 3
 // Interviewer: Rana, imagine you have a string, for example, "hello", and you need to reverse it to "olleh" using JavaScript. How would you approach this problem?
+function reverseString(str) {
+    let reverse = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverse += str[i]
+    }
 
+    console.log(reverse);
+}
+
+reverseString('Hello')
 
 
 // Question 4

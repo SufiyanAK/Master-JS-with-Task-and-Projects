@@ -14,8 +14,15 @@ function sum(array) {
 
 // Question 2
 // Interviewer: Rana, imagine you're given a number, say num, and you need to determine whether it's even or odd. How would you write JavaScript code to do that?
+function findEvenOdd(val) {
+    if (val % 2 === 0) {
+        console.log(`${val} is Even`);
+    } else {
+        console.log(`${val} is Odd`);
+    }
+}
 
-
+findEvenOdd(3)
 
 // Question 3
 // Interviewer: Rana, imagine you have a string, for example, "hello", and you need to reverse it to "olleh" using JavaScript. How would you approach this problem?

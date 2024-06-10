@@ -1,6 +1,15 @@
 // Question 1
 // Interviewer: Rana, imagine you have an array like [3, 7, 11, 2, 9]. How would you write JavaScript code to find the sum of all these numbers?
+function sum(array) {
+    let result = 0;
+    array.forEach(val => {
+        result += val;
+    });
 
+    console.log(result);
+}
+
+// sum([3, 7, 11, 2, 9])
 
 
 // Question 2

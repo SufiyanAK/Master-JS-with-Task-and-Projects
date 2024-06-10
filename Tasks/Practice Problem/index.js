@@ -22,7 +22,7 @@ function findEvenOdd(val) {
     }
 }
 
-findEvenOdd(3)
+// findEvenOdd(3)
 
 // Question 3
 // Interviewer: Rana, imagine you have a string, for example, "hello", and you need to reverse it to "olleh" using JavaScript. How would you approach this problem?
@@ -33,14 +33,26 @@ function reverseString(str) {
     }
 
     console.log(reverse);
+    return reverse
 }
 
-reverseString('Hello')
+// reverseString("Hello")
 
 
 // Question 4
 // Interviewer: Rana, suppose you're given a string, such as "radar", and you need to determine whether it's a palindrome (reads the same forwards and backwards). How would you approach this problem using JavaScript?
+function palendrome(str) {
+    let reverse = reverseString(str)
 
+    if (str === reverse) {
+        // console.log(reverse);
+        console.log(`${reverse} is palendrome`);
+    } else {
+        console.log(`${reverse} is not palendrome`);
+    }
+}
+
+palendrome('BOB')
 
 
 // Question 5
